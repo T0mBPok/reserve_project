@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__contents">
+                <div class="header__content">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./images/header/logo.png" alt="logotype" class="logo__img">
+                        </a>
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">О нас</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Блог</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__btns">
+                        <button class="btn banner__btn">Начать беседу</button>
+                        <div class="header__language">
+                            <div class="language__choosen">
+                                <img src="./images/header/flags_rus.png" alt="" id="choosen-img">
+                                <span id="choosen-txt">RU</span>
+                                <img src="./images/header/chevron.png" alt="" id="choosen-chevron">
+                            </div>
+                            <ul class="language__list" style="display: none; opacity: 0;">
+                                <li id="language__en">
+                                    <img src="./images/header/flags.png" alt="" class="header__language-img">
+                                    <span class="header__language-text">EN</span>
+                                </li>
+                                <li id="language__ru">
+                                    <img src="./images/header/flags_rus.png" alt="" class="header__language-img">
+                                    <span class="header__language-text">RU</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__log">
+                            <button class="btn header__log-btn">
+                                Войти
+                            </button>
+                        </div>
+                        <div class="burger__menu">
+                            <ul class="burger__strings">
+                                <li class="burger__string"></li>
+                                <li class="burger__string"></li>
+                                <li class="burger__string"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__content close" id="h_last-ch">
+                    <nav class="header__nav  open">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">О нас</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Блог</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__btns">
+                        <button class="btn header__log-btn open">
+                            Войти
+                        </button>
+                        <div class="burger__menu">
+                            <ul class="burger__strings">
+                                <li class="burger__string"></li>
+                                <li class="burger__string"></li>
+                                <li class="burger__string"></li>
+                            </ul>
+                            <ul class="burger__items">
+                                <li class="buger__item">
+                                    <a href="" class="nav__link">О нас</a>
+                                </li>
+                                <li class="buger__item">
+                                    <a href="" class="nav__link">Блог</a>
+                                </li>
+                                <li class="buger__item">
+                                    <a href="" class="nav__link">Контакты</a>
+                                </li>
+                                <li class="buger__item">
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <section class="banner">
+                <div class="container">
+                    <div class="banner__info">
+                        <span>+300 прошедших отбор психологов</span>
+                        <h1>Сессии с психологом</h1>
+                        <h1>Онлайн</h1>
+                        <button class="btn banner__btn">Начать беседу</button>
+                    </div>
+                    <div class="banner__images">
+                        <img src="./images/banner/cloud-s.png" alt="cloud-s">
+                        <img src="./images/banner/cloud-m.png" alt="clous-m">
+                        <img src="./images/banner/man.png" alt="man">
+                        <img src="./images/banner/cloud-b.png" alt="cloud-b">
+                    </div>
+                </div>
+            </section>
+            <section class="app">
+                <div class="container">
+                    <div class="app__video">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D" class="video__link" data-fancybox="gallery" data-width="615px">
+                            <img src="./images/app/video__img.png" alt="video_image" class="video__image">
+                            <img src="./images/app/video__btn.png" alt="video_button" class="app__video-btn">
+                        </a>
+                    </div>
+                    <div class="app__sources">
+                        <div>
+                            <h1>Скачайте бесплатно приложение SPEAK</h1>
+                        </div>
+                        <div class="app__about">
+                            <div class="app__icon">
+                                <img src="./images/app/app__icon.png" alt="SPEAK icon">
+                            </div>
+                            <div class="app__text">
+                                <h2>Speak</h2>
+                                <span>онлайн сессии с психологом<br>доступно для IOS и Android</span>
+                            </div>
+                        </div>
+                        <div class="app__links">
+                            <a href="#" class="app__link">
+                                <img src="./images/app/AppStore.png" alt="App Store">
+                            </a>
+                            <a href="#" class="app__link">
+                                <img src="./images/app/GooglePlay.png" alt="Google Play">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="speakers">
+                <div class="container">
+                    <h1>Психологи работающие с актуальными темами</h1>
+                    <div class="tags">
+                        <ul class="tags__row" id="tags_row1">
+                            <li class="tags__categories"><span class="tags__txt">Чувства</span></li>
+                            <li class="tags__categories"><span class="tags__txt">Одиночество</span></li>
+                            <li class="tags__categories"><span class="tags__txt">Вредные привычки</span></li>
+                            <li class="tags__categories"><span class="tags__txt">Отношения</span></li>
+                            <li class="tags__categories"><span class="tags__txt">Работа</span></li>
+                            <li class="tags__categories"><span class="tags__txt">Смыслы</span></li><br><br>
+                            <li class="tags__categories"><span class="tags__txt">Одиночество</span></li>
+                            <li class="tags__categories"><span class="tags__txt">Одиночество</span></li>
+                            <li class="tags__categories"><span class="tags__txt">Отношения с близкими</span></li>
+                            <li class="tags__categories tags__categories-active"><span class="tags__txt">+ 300 психологов</span></li>
+                        </ul>
+                    </div>
+                    <div class="slider">
+                        <div class="slider__people">
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="./images/speakers/photo-b.png" alt="">
+                                </div>
+                                <!-- <img src="./images/speakers/photo.png" alt="picture" class="slide__img"> -->
+                                <div class="slide__info">
+                                    <div class="slide__name">
+                                        Илья Благов
+                                    </div>
+                                    <div class="slide__bottom">
+                                        <div class="slide__stars">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                        </div>
+                                        <div class="slide__arrow">
+                                            <img src="./images/speakers/arrow-right.png" alt="arrow" class="slide__arrow_img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="./images/speakers/photo-b.png" alt="">
+                                </div>
+                                <!-- <img src="./images/speakers/photo.png" alt="picture" class="slide__img"> -->
+                                <div class="slide__info">
+                                    <div class="slide__name">
+                                        Илья Благов
+                                    </div>
+                                    <div class="slide__bottom">
+                                        <div class="slide__stars">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                        </div>
+                                        <div class="slide__arrow">
+                                            <img src="./images/speakers/arrow-right.png" alt="arrow" class="slide__arrow_img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="./images/speakers/photo-b.png" alt="">
+                                </div>
+                                <!-- <img src="./images/speakers/photo.png" alt="picture" class="slide__img"> -->
+                                <div class="slide__info">
+                                    <div class="slide__name">
+                                        Илья Благов
+                                    </div>
+                                    <div class="slide__bottom">
+                                        <div class="slide__stars">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                        </div>
+                                        <div class="slide__arrow">
+                                            <img src="./images/speakers/arrow-right.png" alt="arrow" class="slide__arrow_img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="./images/speakers/photo-b.png" alt="">
+                                </div>
+                                <!-- <img src="./images/speakers/photo.png" alt="picture" class="slide__img"> -->
+                                <div class="slide__info">
+                                    <div class="slide__name">
+                                        Илья Благов
+                                    </div>
+                                    <div class="slide__bottom">
+                                        <div class="slide__stars">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                        </div>
+                                        <div class="slide__arrow">
+                                            <img src="./images/speakers/arrow-right.png" alt="arrow" class="slide__arrow_img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="./images/speakers/photo-b.png" alt="">
+                                </div>
+                                <!-- <img src="./images/speakers/photo.png" alt="picture" class="slide__img"> -->
+                                <div class="slide__info">
+                                    <div class="slide__name">
+                                        Илья Благов
+                                    </div>
+                                    <div class="slide__bottom">
+                                        <div class="slide__stars">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                            <img src="./images/speakers/star.png" alt="star">
+                                        </div>
+                                        <div class="slide__arrow">
+                                            <img src="./images/speakers/arrow-right.png" alt="arrow" class="slide__arrow_img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__dots">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="help">
+                <div class="container">
+                    <div class="help__left">
+                        <h1>Поможем вам</h1>
+                        <ul class="help__list">
+                            <li>
+                                <div  class="help__check">
+                                    <img src="./images/help/check.png" alt="check">
+                                </div>
+                                <div class="help__text">
+                                    <span>Разрешить причины сложных отношений с партнером</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div  class="help__check">
+                                    <img src="./images/help/check.png" alt="check">
+                                </div>
+                                <div class="help__text">
+                                    <span>Снять или снизить остроту переживаний</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div  class="help__check">
+                                    <img src="./images/help/check.png" alt="check">
+                                </div>
+                                <div class="help__text">
+                                    <span>Справиться с выгоранием на работе и найти мотивацию</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div  class="help__check">
+                                    <img src="./images/help/check.png" alt="check">
+                                </div>
+                                <div class="help__text">
+                                    <span>Понять себя в отношениях с близкими людьми</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div  class="help__check">
+                                    <img src="./images/help/check.png" alt="check">
+                                </div>
+                                <div class="help__text">
+                                    <span>Найти себя и понимать свои желания</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div  class="help__check">
+                                    <img src="./images/help/check.png" alt="check">
+                                </div>
+                                <div class="help__text">
+                                    <span>Исследовать и управлять изменениями в своей жизни</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="help__right">
+                        <div class="help__image">
+                            <img src="./images/help/img.png" alt="help">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="advantage">
+                <div class="container">
+                    <div class="advantage__left">
+                        <div class="advantage__image">
+                            <img src="./images/advantage/phone.png" alt="">
+                            <img src="./images/advantage/screen.png" alt="">
+                        </div>
+                    </div>
+                    <div class="advantage__right">
+                        <h1>Преимущества онлайн сессий с психологом</h1>
+                        <ul class="advantage__list">
+                            <li>
+                                <div class="advantage__dot">
+                                    <div></div>
+                                </div>
+                                <div class="advantage__text">
+                                    <h2>Занимайтесь где и как удобно</h2>
+                                    <span>Дома или в поездке и в любом часовои поясе</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="advantage__dot">
+                                    <div></div>
+                                </div>
+                                <div class="advantage__text">
+                                    <h2>Меньше забот-больше мотивации</h2>
+                                    <span>Не тратьте время на дорогу и управляйте занятиями в два клика</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="advantage__dot">
+                                    <div></div>
+                                </div>
+                                <div class="advantage__text">
+                                    <h2>Доверяйте себе</h2>
+                                    <span>Выбирайте среди провенных психологов, которые специализируются на ваших запросах</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- <section class="steps">
+                <div class="container">
+                    <div class="title">
+                        <h1>Как мы отбираем специалистов</h1>
+                        <span>Отбор прохождения меньше 10%</span>
+                    </div>
+                    <div class="steps__parts">
+                        <div class="steps__left">
+                            <ul class="steps__list">
+                                <li>
+                                    <div class="steps__number">
+                                        <span>1</span>
+                                    </div>
+                                    <div class="steps__text">
+                                        <h2>Документы об образовании</h2>
+                                        <span>Обязательно иметь высшее психологическое образование и сертификаты для ведения психотерапии</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="steps__number">
+                                        <span>2</span>
+                                    </div>
+                                    <div class="steps__text">
+                                        <h2>Опыт частной практики и личной терапии</h2>
+                                        <span>Нужно не менее 3-х лет частной практики, личная терапия и регулярные супервизии</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="steps__number">
+                                        <span>3</span>
+                                    </div>
+                                    <div class="steps__text">
+                                        <h2>Собеседование с нашим экспертом-ментором</h2>
+                                        <span>ОбязаОтслеживаются коммуникативные способности, уровень эмпатии, манера и стиль беседы,  проффесиональные компетенции</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="steps__right">
+                            <div class="steps__image">
+                                <img src="./images/steps/steps__image.png" alt="tablet man">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+        </div>
+    </main>
+    <footer class="footer">
+
+    </footer>
+    <script type="module" src="./js/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
