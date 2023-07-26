@@ -36,9 +36,9 @@ for (var i=0; i<els1.length; i++){
     els1[i].addEventListener('click', function(evt){
         evt.preventDefault();
         els1.forEach(c => {
-            c.classList.remove('tags__categories-active');
+            c.classList.remove('btn-active');
         })
-        $(this).addClass('tags__categories-active');
+        $(this).addClass('btn-active');
     })
 }
 
@@ -115,3 +115,34 @@ $(document).ready(function() {
 //     src: './images/speakers/arrow-right.png'
 // }).appendTo('.slide__arrow')
 
+const nums = document.getElementById('s_nums');
+const num = nums.querySelectorAll('.step__num');
+
+console.log()
+
+for (var i=0; i<num.length; i++){
+    num[i].addEventListener('click', function(evt){
+        evt.preventDefault();
+        num.forEach(c => {
+            c.classList.remove('btn-active');
+        })
+        $(this).addClass('btn-active');
+    })
+}
+
+let count = parseInt($('#s_count').text(), 10)
+
+$(document).ready(function () { 
+    $('#arrow_l').click(function(){
+        if(count>0){
+            count--
+            $('#s_count').text(count)
+            $('#s_price').text(count*49)
+        }
+    })
+    $('#arrow_r').click(function(){
+        count+=1;
+        $('#s_count').text(count);
+        $('#s_price').text(count*49)
+    })
+ })
