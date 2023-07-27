@@ -1247,7 +1247,18 @@
             },
         });
     }
-    if(w>=768){
+    else if (w>=1024){
+        var swiper = new Swiper(".r_slider", {
+            spaceBetween: 20,
+            slidesPerView: 2,
+            autoHeight: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    }
+    else if(w>=768){
         var swiper = new Swiper(".r_slider2", {
             spaceBetween: 20,
             slidesPerView: 2,
@@ -1268,7 +1279,6 @@
             },
         });
     }
-    
     
   </script>
 </body>

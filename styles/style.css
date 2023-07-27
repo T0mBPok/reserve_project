@@ -3619,6 +3619,7 @@ h2{
 
 .r_slider2{
     width: 100%;
+    display: none !important;
 }
 
 .r_slider .swiper-slide{
@@ -3681,6 +3682,10 @@ h2{
     .r_slider{
         overflow: hidden !important;
         
+    }
+
+    .r_slider2{
+        display: none !important;
     }
 
     .r_slider .swiper-slide{
@@ -3749,6 +3754,12 @@ h2{
     .r_slider{
         display: none !important;
     }
+
+    .r_slider2{
+        display: block !important;
+        
+    }
+
     .reviews__list{
         display: flex;
     }
@@ -3804,6 +3815,11 @@ h2{
 @media screen and (max-width:360px) {
     .r_slider{
         display: none !important;
+        
+    }
+
+    .r_slider2{
+        display: block !important;
         
     }
 
