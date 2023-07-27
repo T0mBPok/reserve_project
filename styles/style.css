@@ -95,7 +95,7 @@ h2{
 
 @media screen and (max-width:1024px){
     .container{
-        width: 90%;
+        width: 944px;
     }
 }
 
@@ -2355,6 +2355,10 @@ h2{
     font-size: 18px; 
 }
 
+.step__btn:hover{
+    background: #e4e4e4;
+}
+
 .howwork__decorator{
     width: 200px;
     height: 400px;
@@ -2830,6 +2834,10 @@ h2{
     padding: 12px 30px 14px 30px;
     font-size: 18px;
     width: fit-content;
+}
+
+.subs__btn:hover{
+    background: #e4e4e4;
 }
 
 .subs__outcome{
@@ -3571,13 +3579,11 @@ h2{
 
 .reviews__list{
     display: flex;
-    gap: 20px;
     display: none;
 }
 
 .reviews__list2{
     display: flex;
-    gap: 20px;
     width: 1868px;
 }
 
@@ -3601,25 +3607,35 @@ h2{
     border-radius: 24px;
 }
 
-.reviews__list2 li:nth-child(1){
-    width: 549px;
-}
-
-.reviews__list2 li:nth-child(2){
-    width: 551px;
-}
-
-.reviews__list2 li:last-child{
-    position: absolute;
-    width: 700.333px;
-    transform: translateX(1140px);
-    opacity: 0.5;
-}
-
 .review__header{
     display: flex;
     gap: 15px;
 }
+
+.r_slider{
+    width: 100%;
+    overflow: visible !important;
+}
+
+.r_slider2{
+    width: 100%;
+}
+
+.r_slider .swiper-slide{
+    width: 551px !important;
+    opacity: 0.5;
+}
+
+.r_slider .swiper-slide-active{
+    opacity: 1 !important;
+}
+
+.r_slider .swiper-slide-next{
+    opacity: 1 !important;
+}
+
+
+
 
 .reviews__list2 .review__person{
     display: flex;
@@ -3662,6 +3678,14 @@ h2{
 }
 
 @media screen and (max-width:1024px) {
+    .r_slider{
+        overflow: hidden !important;
+        
+    }
+
+    .r_slider .swiper-slide{
+        width: 462px !important;
+    }
     .reviews__list2{
         width: auto;
     }
@@ -3722,6 +3746,9 @@ h2{
 }
 
 @media screen and (max-width:768px) {
+    .r_slider{
+        display: none !important;
+    }
     .reviews__list{
         display: flex;
     }
@@ -3741,7 +3768,7 @@ h2{
     .reviews__list li{
         padding: 20px;
         display: none;
-        width: 334px;
+        width: 334px !important;
         height: fit-content;
     }
 
@@ -3775,6 +3802,11 @@ h2{
 }
 
 @media screen and (max-width:360px) {
+    .r_slider{
+        display: none !important;
+        
+    }
+
     .reviews__list{
         display: flex;
     }
@@ -3794,18 +3826,8 @@ h2{
 
     .reviews__list li{
         padding: 20px;
-    }
-
-    .reviews__list li:first-child{
-        display: flex;
-    }
-
-    .reviews__list li:nth-child(2){
-        display: none;
-    }
-
-    .reviews__list li:nth-child(3){
-        display: none;
+        width: 320px !important;
+        
     }
 
     .review__person{
