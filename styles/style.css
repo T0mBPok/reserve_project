@@ -17,7 +17,7 @@
     --btn-shadow-greenbtn: 0px 15px 30px 0px rgba(220, 232, 243, 0.25);
     --background-white: #fff;
     --box-shadow-wwhite: 0px 15px 25px 0px rgba(0, 0, 0, 0.05);
-    --blind-background: rgba(0, 185, 182, 0.10);
+    --blind-background: rgba(0, 185, 182, 0.25);
     --orange: hsla(40, 100%, 50%, 1);
     --orange-gradient: linear-gradient(hsla(200, 100%, 99%, 1),hsla(40, 100%, 50%, 0.08), hsla(200, 100%, 99%, 1));
 }
@@ -875,11 +875,12 @@ h2{
 
 .slider{
     width: 100%;
+    margin-top: 50px;
+
 }
 
 .slider__people{
     width: 100%;
-    margin-top: 50px;
     display: flex;
     justify-content: space-between;
 }
@@ -941,6 +942,30 @@ h2{
     background: var(--colors-gradient);
 }
 
+.swiper-pagination{
+    position: relative !important;
+    margin-top: 40px;
+}
+
+.swiper-slide{
+    display: flex !important;
+    width: fit-content !important;
+}
+
+.swiper-pagination-bullet{
+    background: var(--blind-background) !important;
+    width: 20px !important; 
+    height: 6px !important;
+    border-radius: 5px !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active{
+    width: 30px !important;
+    background: var(--txt-primary) !important;
+    transition: 0.3s;
+}
+
 
 @media screen and (max-width:1024px){
     .slide__img{
@@ -994,7 +1019,6 @@ h2{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 29px;
     }
 
     .slide__name{
@@ -1038,10 +1062,6 @@ h2{
     .tags__categories{
         font-size: 14px;
         
-    }
-
-    .slider__people{
-        justify-content: center;
     }
 
     .slider__link{

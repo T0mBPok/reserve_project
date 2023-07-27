@@ -145,4 +145,7 @@ $(document).ready(function () {
         $('#s_count').text(count);
         $('#s_price').text(count*49)
     })
- })
+ });
+
+
+
